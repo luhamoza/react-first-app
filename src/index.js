@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 const author = "Gregory E. Lang";
 const title = "Why a Daughter Need a Dad";
+const img = "./img/book-1.jpg";
 
 const BookList = () => {
   return (
@@ -18,7 +19,7 @@ const BookList = () => {
 const Book = () => {
   return (
     <article className="book">
-      <img src="./img/book-1.jpg" alt="Why a Daughter Needs a Dad" />
+      <img src={img} alt={title} />
       <h2>{title}</h2>
       <h4>{author.toUpperCase()}</h4>
     </article>
