@@ -31,47 +31,11 @@ const BookList = () => {
           return <Book {...book} key={book.id} />;
         })}
       </section>
-      <section className="formStyle">
-        <EventExample />
-      </section>
+      <section className="formStyle"></section>
     </>
   );
 };
 
-const EventExample = () => {
-  return (
-    <section>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          console.log("form submitted");
-        }}
-      >
-        <h2>Form</h2>
-        <input
-          className="inputStyle"
-          type="text"
-          name="example"
-          onChange={(e) => console.log(e.target.value)}
-        ></input>
-        <button className="btn" type="submit">
-          submit
-        </button>
-        <div>
-          <button
-            className="btn"
-            onClick={() => {
-              console.log("clicked me");
-            }}
-            type="button"
-          >
-            click me{" "}
-          </button>
-        </div>
-      </form>
-    </section>
-  );
-};
 const Book = (props) => {
   const { author, title, img } = props;
   // console.log(props);
