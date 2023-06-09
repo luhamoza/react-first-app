@@ -8,6 +8,19 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #222;
 }
+.formStyle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.btn {
+  /* display: block; */
+  /* margin: 0.5rem 0; */
+  padding: 0rem 1rem;
+}
+.inputStyle {
+  margin: 1rem 0;
+}
 .booklist {
   width: 90vw;
   max-width: 1170px;
